@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor 3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="description-container">
+        <h1>Monitor 3 - Samsung Odyssey G4 - 214,48€
+</h1>
+        <p>Tamanho do ecrã na diagonal: 68,6 cm (27")<br>
+Resolução: 1920 x 1080 pixels<br>
+Tipo de HD: Full HD<br>
+Proporção de imagem nativa: 16:9<br>
+Tecnologia de apresentação: LED<br>
+Tipo de painel: IPS<br>
+Ecrã táctil: Não<br>
+Brilho do ecrã (normal): 400 cd/m²<br>
+Tempo de resposta: 1 ms<br>
+Formato do ecrã: Plano<br>
+Rácio de contraste (típico): 1000:1<br>
+Taxa máxima de atualização: 240 Hz<br>
+Ângulo de visão (horizontal): 178°<br>
+Ângulo de visão (vertical): 178°<br>
+Cores do ecrã: 16,7 milhões de cores<br>
+Espaço de cor RGB: sRGB<br>
+Gama de cores: 99%<br>
+Desempenho<br>
+NVIDIA G-SYNC: Sim<br>
+AMD FreeSync: Sim<br>
+Tipo de AMD FreeSync: FreeSync Premium<br>
+Encontra as melhores ofertas na pccomponentes.pt<br>
+Tecnologia Flicker free (livre de cintilação): Sim<br>
+Multimédia<br>
+Altifalantes incorporados: Não<br>
+Câmara incorporada: Não<br>
+Design<br>
+Posicionamento no mercado: Gaming<br>
+Cor do produto: Preto<br>
+Conectividade<br>
+Hub USB integrado: Não<br>
+HDMI: Sim<br>
+Quantidade de portas HDMI: 2<br>
+Quantidade de portas DisplayPort: 1<br>
+Saída para auscultador: Sim<br>
+Ergonomia<br>
+Suporte VESA: Sim<br>
+Interface de montagem em painel: 100 x 100 mm<br>
+Ajuste de altura: Sim<br>
+Ajuste de altura: 12 cm<br>
+Pivot: Sim<br>
+Ângulo pivot: -92 - 92°<br>
+Giratório: Sim<br>
+Orientação: -15 - 15°<br>
+Inclinável: Sim<br>
+Ângulo de inclinação: -3 - 22°<br>
+Gestão de energia<br>
+Classe de eficiência energética (SDR): E<br>
+Consumo de energia (SDR) por 1000 horas: 31 kWh<br>
+Consumo de energia (típico): 21 W<br>
+Consumo de energia (standby): 0,5 W<br>
+Consumo de energia (máx): 48 W<br>
+Consumo de energia (desligado): 0,3 W<br>
+Voltagem de entrada AC: 100 - 240 V<br>
+Conteúdo da embalagem<br>
+Suporte incluído: Sim<br>
+Pesos e dimensões<br>
+Comprimento do conjunto (com suporte): 614,7 mm<br>
+Largura do conjunto (com suporte): 244,8 mm<br>
+Altura do conjunto (com suporte): 571,1 mm<br>
+Peso (com suporte): 5,3 kg<br>
+Comprimento (sem base): 61,5 cm<br>
+Largura (sem base): 8,54 cm<br>
+Altura (sem base): 37,7 cm<br>
+Peso (sem base): 3,6 kg<br>
+Embalagem<br>
+Comprimento da embalagem: 685 mm<br>
+Profundidade da embalagem: 469 mm<br>
+Altura da embalagem: 168 mm<br>
+Peso da embalagem: 7 kg<br><br> Este monitor é bem mais ou menos, o lenovo legion é bem melhor
+<br><a href="https://www.pccomponentes.pt/samsung-odyssey-g4-ls27bg400euxen-27-led-ips-fullhd-240hz-compativel-com-g-sync">Link para compra</a>
+</p>
+    </div>
+    <div class="gallery-container">
+        <div class="arrow left" onclick="prevImage()">&#10094;</div>
+        <img id="gallery-img" src="img3-1.jpg" alt="Imagem 1" class="gallery-img">
+        <div class="arrow right" onclick="nextImage()">&#10095;</div>
+    </div>
+
+    <script>
+        let currentImageIndex = 1;
+        const totalImages = 3;
+
+        function showImage(index) {
+            const img = document.getElementById('gallery-img');
+            img.src = `img3-${index}.jpg`;
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex % totalImages) + 1;
+            showImage(currentImageIndex);
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 2 + totalImages) % totalImages + 1;
+            showImage(currentImageIndex);
+        }
+
+        // Inicializa a galeria com a primeira imagem
+        showImage(currentImageIndex);
+    </script>
+</body>
+</html>

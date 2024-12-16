@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="description-container">
+        <h1>Monitor 1 - Lenovo Legion Legion Curvo - 259,99€</h1>
+        <p>Tamanho do painel: 27"
+<br>
+Resolução: 1920 x 1080px
+<br>
+Tipo de ecrã: Curvo (1500R)
+<br>
+Tipo de painel: VA
+<br>
+Tratamento do painel: Anti-Glare
+<br>
+Brilho: 350 nits
+<br>
+Contraste: 3000:1
+<br>
+Relação de aspeto: 16:9
+<br>
+Taxa de atualização:
+<br>
+240Hz
+<br>
+280Hz (Overclock)
+<br>
+Tecnologia: 
+<br>
+AMD FreeSync Premium
+<br>
+NVIDIA® G-SYNC® Compatible
+<br>
+Tempo de resposta: 0.5 ms (MPRT)
+<br>
+Tecnologia HDR: HDR10
+<br>
+Gama de cor:
+<br>
+99% sRGB
+<br>
+90% DCI-P3
+<br>
+Reprodução de cores: 16.7 milhões de cores
+<br>
+Conectividade:
+<br>
+2x HDMI 2.1
+<br>
+1x DisplayPort 1.4
+<br>
+Colunas: 2x 3W
+<br>
+Ajustabilidade: 
+<br>
+Inclinação
+<br>
+Giratório
+<br>
+Altura
+<br>
+Pivot
+<br>
+Energia:
+<br>
+Típico: 24W
+<br>
+Máximo: 47W
+<br>
+Norma VESA: 100 x 100 mm
+<br>
+Dimensões do Produto:
+<br>
+Posição baixa: 610.3 x 258.8 x 385.8 mm
+<br>
+Posição elevada: 610.3 x 258.8 x 520.8 mm
+<br>
+Sem suporte: 610.3 x 82.7 x 367.3 mm
+<br>
+Peso do produto:
+<br>
+Com suporte: 6.2 Kg
+<br>
+Sem suporte: 4.3 Kg
+<br><br> Gosto bastante deste monitor, com boa taxa de atualização e pouca latência
+<br><br><a href="https://www.pcdiga.com/imagem-e-som/monitores/monitores/monitor-curvo-lenovo-legion-legion-r27fc-30-va-27-fhd-16-9-280hz-freesync-g-sync-compatible-67b6gac1eu-197529364673">Link para compra</a>
+</p>
+
+    </div>
+    <div class="gallery-container">
+        <div class="arrow left" onclick="prevImage()">&#10094;</div>
+        <img id="gallery-img" src="img1.jpg" alt="Imagem 1" class="gallery-img">
+        <div class="arrow right" onclick="nextImage()">&#10095;</div>
+    </div>
+
+    <script>
+        let currentImageIndex = 1;
+        const totalImages = 3;
+
+        function showImage(index) {
+            const img = document.getElementById('gallery-img');
+            img.src = `img${index}.jpg`;
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex % totalImages) + 1;
+            showImage(currentImageIndex);
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 2 + totalImages) % totalImages + 1;
+            showImage(currentImageIndex);
+        }
+    </script>
+</body>
+</html>
